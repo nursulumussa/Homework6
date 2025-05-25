@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Margin and Padding Shorthand</title>
+    <style>
+        .shorthand-div {
+            margin: 10px 20px 30px 40px;
+            padding: 15px 25px;
+            background-color: lightgreen;
+            border: 1px solid black;
+        }
+
+        .grid {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .grid div {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Margin and Padding Shorthand</h1>
+    <div class="shorthand-div">This div uses margin and padding shorthand properties.</div>
+
+    <h2>Grid Example</h2>
+    <div class="grid">
+        <div style="margin: 5px; padding: 5px;">1</div>
+        <div style="margin: 10px; padding: 20px;">2</div>
+        <div style="margin: 20px; padding: 10px;">3</div>
+        <div style="margin: 30px; padding: 15px;">4</div>
+    </div>
+</body>
+</html>

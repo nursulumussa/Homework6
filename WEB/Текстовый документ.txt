@@ -1,0 +1,29 @@
+import java.util.HashMap;
+import java.util.Map;
+public class Furniture {
+    private Map<String, String> characteristic;
+    public Furniture() {
+        this.characteristic = new HashMap<>();
+    }
+    public void setCharacteristic(String key, String value) {
+        characteristic.put(key, value);
+    }
+    public String getProperty(String key) {
+        return characteristic.get(key);
+    }
+    public static void main(String[] args) {
+        Furniture chair = new Furniture();
+        chair.setCharacteristic("аты", "үстел");
+        chair.setCharacteristic("саны", "1");
+        chair.setCharacteristic("өндіруші фирма", "IKEA");
+        chair.setCharacteristic("дайындалған жылы", "2021");
+        chair.setCharacteristic("колданылуы", "отыру");
+        chair.setCharacteristic("дайындалған материал түрі", "ағаш");
+        chair.setCharacteristic("дайындау әдісі", "колөнер");
+        chair.setCharacteristic("Стиль", "заманауи");
+        System.out.println("Мебель туралы мәлімет:");
+        for (Map.Entry<String, String> entry : chair.characteristic.entrySet()) {
+            System.out.println(entry.getKey() + ": " + entry.getValue());
+        }
+    }
+}
